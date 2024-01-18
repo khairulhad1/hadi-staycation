@@ -1,0 +1,15 @@
+partials/**
+
+**/navbar.ejs
+**/header.ejs
+**/index.ejs
+**/navbar.ejs
+**/sidebar.ejs
+**/footer.ejs
+**/js.ejs
+**/view-category.ejs
+**/add-modal.ejs
+**/table-category.ejs
+**/image-item.ejs
+**/view-detail-item.ejs
+**/table-booking.ejs
