@@ -17,8 +17,6 @@ var usersRouter = require("./routes/users");
 const adminRouter = require("./routes/admin");
 const apiRouter = require("./routes/api");
 
-app.set("trust proxy", 1);
-
 var app = express();
 
 // view engine setup
