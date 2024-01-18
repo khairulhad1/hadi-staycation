@@ -7,7 +7,9 @@ const mongoose = require("mongoose");
 const methodeOverride = require("method-override");
 const session = require("express-session");
 const flash = require("connect-flash");
-mongoose.connect("mongodb://127.0.0.1:27017/db_staycation");
+mongoose.connect(
+  "mongodb+srv://khairulhadi1:BWAMERNHADI@cluster0.wzcefsi.mongodb.net/db_staycation?retryWrites=true&w=majority&ssl=true"
+);
 
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
