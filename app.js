@@ -1,3 +1,4 @@
+require("dotenv").config();
 var createError = require("http-errors");
 var express = require("express");
 var path = require("path");
@@ -7,9 +8,8 @@ const mongoose = require("mongoose");
 const methodeOverride = require("method-override");
 const session = require("express-session");
 const flash = require("connect-flash");
-mongoose.connect(
-  "mongodb+srv://khairulhadi1:BWAMERNHADI@cluster0.wzcefsi.mongodb.net/db_staycation?retryWrites=true&w=majority&ssl=true"
-);
+
+mongoose.connect(process.env.MONGO_URI);
 
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
