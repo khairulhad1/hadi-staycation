@@ -22,7 +22,7 @@ module.exports = {
         .limit(5)
         .populate({
           path: "itemId",
-          select: "_id name imageId country city isPopular",
+          select: "_id title imageId country city isPopular",
           perDocumentLimit: 4,
           option: {
             sort: { sumBooking: -1 },
